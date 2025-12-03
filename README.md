@@ -23,3 +23,23 @@ This project uses Terraform to build a secure and scalable Virtual Private Cloud
 1. **Initialize Terraform**
    ```bash
    terraform init
+
+## Section 2: Networking Setup
+
+In this section, I configured the core networking components of the VPC using Terraform:
+
+- Defined **public and private subnets** in separate availability zones.
+- Attached an **Internet Gateway** to the VPC for public access.
+- Created a **NAT Gateway** in the public subnet to allow outbound traffic from the private subnet.
+- Added **route tables**:
+  - Public route table routes traffic to the Internet Gateway.
+  - Private route table routes traffic through the NAT Gateway.
+- Associated each route table with its corresponding subnet.
+
+📸 Screenshot of the Terraform blocks:
+
+![Section 2 Screenshot](screenshots/Screenshot%2025-12-03%185135.png)
+![Section 2 Screenshot](screenshots/Screenshot%2025-12-03%185159.png)
+![Section 2 Screenshot](screenshots/Screenshot%2025-12-03%185234.png)
+![Section 2 Screenshot](screenshots/Screenshot%2025-12-03%185318.png)
+![Section 2 Screenshot](screenshots/Screenshot%2025-12-03%185328.png)
