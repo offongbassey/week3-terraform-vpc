@@ -1,0 +1,15 @@
+# Terraform files to ignore
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# Keys and secrets
+*.pem
+
+# Logs and system files
+*.log
+.DS_Store
+
+# VS Code settings
+.vscode/
