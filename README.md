@@ -37,9 +37,24 @@ provider "aws" {
   region = var.region
 }
 ```
-
 ### Step 2: Create VPC
 ![VPC Creation](screenshots/vpc-creation.png)
 
 Created custom VPC with CIDR block...
 
+### Step 3: Create public subnet
+![public subnet](screenshots/public-subnet-creation.png)
+
+Links this subnet to the VPC you created earlier (main_vpc).
+
+### Step 4: Create private subnet
+![private subnet](screenshots/private-subnet-creation.png)
+
+Another slice of your VPC network, separate from the public subnet.
+
+### Step 5: Create Internet Gateway
+![Internet Gateway](screenshots/igw-config.png)
+
+Created an Internet Gateway to allow the VPC to communicate with the internet.
+
+This project sets up a Virtual Private Cloud (VPC) using Terraform. It includes public and private subnets, an Internet Gateway, and variable configuration.
