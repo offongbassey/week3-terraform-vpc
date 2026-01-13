@@ -276,3 +276,35 @@ output "private_instance_id" {
   value       = aws_instance.private_ec2.id
 }
 ```
+## 📊 Deployment Results
+
+### Terraform Init
+![Terraform Init](screenshots/terraform-init.png)
+
+Successfully initialized Terraform and downloaded the AWS provider.
+
+### Terraform Validate
+![Terraform Validate](screenshots/terraform-validate.png)
+
+Configuration validated successfully with no syntax errors.
+
+### Terraform Plan
+![Terraform Plan](screenshots/terraform-plan.png)
+
+Terraform plan shows all resources that will be created: VPC, subnets, route tables, NAT gateway, security group, and EC2 instances.
+
+### Terraform Apply
+![Terraform Apply](screenshots/terraform-apply-success.png)
+
+Successfully deployed all infrastructure to AWS.
+
+### Infrastructure Verification
+![AWS Console VPC](screenshots/aws-vpc-console.png)
+![AWS Console EC2](screenshots/aws-ec2-console.png)
+
+Verified that all resources were created successfully in the AWS Console.
+
+### Outputs
+![Terraform Outputs](screenshots/terraform-outputs.png)
+
+Retrieved the public IP of the public EC2 instance and the instance ID of the private EC2.
