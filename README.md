@@ -308,3 +308,12 @@ Verified that all resources were created successfully in the AWS Console.
 ![Terraform Outputs](screenshots/terraform-outputs.png)
 
 Retrieved the public IP of the public EC2 instance and the instance ID of the private EC2.
+
+## Key Achievements
+✅ Successfully deployed multi-tier VPC architecture
+✅ Implemented NAT Gateway for secure private subnet internet access
+✅ Configured proper routing between public and private subnets
+✅ Practiced infrastructure destruction and recreation (IaC lifecycle)
+✅ Maintained zero production costs using AWS free tier + credits
+
+**Note**: All resources were properly destroyed after testing to prevent unnecessary costs.
